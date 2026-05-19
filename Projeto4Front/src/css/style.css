@@ -163,6 +163,8 @@ ESTILIZANDO O MENU-HAMBURGUER
         position: absolute;
         top: 80px;
         left: 0;
+        border-radius: 40px;
+        width: 100%;
         background: var(--color2);
         flex-direction: column;
         passing: 20px 0;
@@ -175,4 +177,10 @@ ESTILIZANDO O MENU-HAMBURGUER
         flex-direction: column;
         text-align: center;
     }
+
+    /*PARA O MENU HAMBURGUER QUANDO CLICADO VIRAR UM ("X")*/
+    .open span:nth-child(1){transform:rotate(45deg)translate(5px,5px);}
+    .open span:nth-child(2){opacity:0;}
+    .open span:nth-child(3){transform:rotate(-45deg)translate(7px,-7px);}
 }
+
